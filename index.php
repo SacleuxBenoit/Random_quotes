@@ -8,9 +8,12 @@ include('pass.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
+        <h1>Random quotes generator</h1>
+
     <?php
         try
         {
@@ -25,9 +28,8 @@ include('pass.php');
         $get_quotes = $bdd->query('SELECT author,quote FROM quotes ORDER BY RAND() LIMIT 1');
         $get_quotes->execute();
         while($display_quotes = $get_quotes->fetch()){
-            echo $display_quotes['author'];
-            echo $display_quotes['quote'];
-
+                echo '<div class="test">' . $display_quotes['quote'] . '</br>';
+                echo '<p class="p_author">' . $display_quotes['author'] .'</p>' . '</div>';
         }
     ?>
 </body>
