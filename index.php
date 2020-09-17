@@ -32,7 +32,7 @@ include('pass.php');
         }
     ?>
 
-    <button id="refresh" onclick="document.location.reload(false)"> Suivant </button>
+    <button id="refresh" onclick="document.location.reload(false)">Next </button>
     
 </body>
 </html>
