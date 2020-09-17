@@ -32,5 +32,8 @@ include('pass.php');
                 echo '<p class="p_author">' . ' - ' . $display_quotes['author'] .'</p>' . '</div>';
         }
     ?>
+
+    <button id="refresh" onclick="document.location.reload(false)"> Suivant </button>
+    
 </body>
 </html>
