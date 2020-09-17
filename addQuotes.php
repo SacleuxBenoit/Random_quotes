@@ -14,13 +14,13 @@ include('pass.php')
 <body>
     <form action="addQuotes.php" method="post">
         <p>
-            <label for="addQuotes">Quote :</label>
-            <input type="text" name="addQuotes" id="addQuotes">
+            <label for="addAuthors">Author :</label>
+            <input type="text" name="addAuthors" id="addAuthors">
         </p>
         
         <p>
-            <label for="addAuthors">Author :</label>
-            <textarea id="addAuthors" name="addAuthors" rows="15" cols="50"></textarea>
+            <label for="addQuotes">Quote :</label>
+            <textarea id="addQuotes" name="addQuotes" rows="15" cols="50"></textarea>
         </p>
 
         <input type="submit" value="Submit">
