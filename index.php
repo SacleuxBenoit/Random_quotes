@@ -21,6 +21,14 @@ include('pass.php');
         {
                 die('Erreur : '.$e->getMessage());
         }
+
+        $get_quotes = $bdd->query('SELECT author,quote FROM quotes ORDER BY RAND() LIMIT 1');
+        $get_quotes->execute();
+        while($display_quotes = $get_quotes->fetch()){
+            echo $display_quotes['author'];
+            echo $display_quotes['quote'];
+
+        }
     ?>
 </body>
 </html>
