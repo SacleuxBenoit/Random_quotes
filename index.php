@@ -28,8 +28,8 @@ include('pass.php');
         $get_quotes = $bdd->query('SELECT author,quote FROM quotes ORDER BY RAND() LIMIT 1');
         $get_quotes->execute();
         while($display_quotes = $get_quotes->fetch()){
-                echo '<div class="test">' . $display_quotes['quote'] . '</br>';
-                echo '<p class="p_author">' . $display_quotes['author'] .'</p>' . '</div>';
+                echo '<div class="test">' . " “ " . $display_quotes['quote'] . " ” " . '</br>';
+                echo '<p class="p_author">' . ' - ' . $display_quotes['author'] .'</p>' . '</div>';
         }
     ?>
 </body>
