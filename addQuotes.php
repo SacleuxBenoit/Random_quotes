@@ -43,6 +43,7 @@ include('pass.php')
                 $send_database->bindParam(':author', $_POST['addAuthors']);
                 $send_database->bindParam(':quote', $_POST['addQuotes']);
                 $send_database->execute();
+                echo '<h1>the query have been sent</h1>';
         }
     ?>
 </body>
