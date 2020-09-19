@@ -1,9 +1,43 @@
 body{
     background-color: black;
     color: white;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "motivations motivations films films"
+    "series series . . "
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+}
+
+.div_motivations{
+    grid-area: motivations;
+}
+
+.div_films{
+    grid-area: films;
+}
+
+.div_series{
+    grid-area: series;
 }
 
 .img_series, .img_films, .img_motivations{
     height: 15em;
     width: 22em;
+}
+
+.left_div{
+    padding-left: 15em;
+}
+
+.right_div{
+    padding-right: 5em;
+}
+
+p{
+    font-size: 2em;
 }
