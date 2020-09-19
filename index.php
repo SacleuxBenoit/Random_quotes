@@ -8,27 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Random Quotes</h1>
+    <h1 class="header">Random Quotes</h1>
 
-    <div>
-        <a href="./quotes/quotes_motivations.php"><img src="./images/quotes_motivations.png" class="img_motivations"></a>
-        <p>
-            quotes motivations
-        </p>
+    <div class="div_motivations left_div">
+        <p>quotes motivations</p>
+            <a href="./quotes/quotes_motivations.php"><img src="./images/quotes_motivations.png" class="img_motivations"></a>
     </div>
 
-    <div>
-        <a href="./quotes/quotes_films.php"><img src="./images/quotes_films.png" class="img_films"></a>
-        <p>
-            quotes films
-        </p>
+    <div class="div_films right_div">
+        <p>quotes films</p>
+            <a href="./quotes/quotes_films.php"><img src="./images/quotes_films.png" class="img_films"></a>
     </div>
 
-    <div>
-        <a href="./quotes/quotes_series.php"><img src="./images/quotes_series.png" class="img_series"></a>
-        <p>
-            quotes series
-        </p>
+    <div class="div_series left_div" >
+        <p>quotes series</p>
+            <a href="./quotes/quotes_series.php"><img src="./images/quotes_series.png" class="img_series"></a>
     </div>
 </body>
 </html>
