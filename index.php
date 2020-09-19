@@ -11,21 +11,21 @@
     <h1>Random Quotes</h1>
 
     <div>
-        <img src="./images/quotes_motivations.png" class="img_motivations">
+        <a href="./quotes/quotes_motivations.php"><img src="./images/quotes_motivations.png" class="img_motivations"></a>
         <p>
             quotes motivations
         </p>
     </div>
 
     <div>
-        <img src="./images/quotes_films.png" class="img_films">
+        <a href="./quotes/quotes_films.php"><img src="./images/quotes_films.png" class="img_films"></a>
         <p>
             quotes films
         </p>
     </div>
 
     <div>
-        <img src="./images/quotes_series.png" class="img_series">
+        <a href="./quotes/quotes_series.php"><img src="./images/quotes_series.png" class="img_series"></a>
         <p>
             quotes series
         </p>
