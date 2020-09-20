@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Sep 18, 2020 at 11:22 AM
+-- Generation Time: Sep 20, 2020 at 12:41 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -45,7 +45,18 @@ INSERT INTO `quotes_films` (`ID`, `author`, `quote`) VALUES
 (13, 'Inception 2010', 'True Inspiration Is Impossible To Fake.'),
 (14, 'Inception 2010', 'Dreams Feel Real While We’re In Them. It’s Only When We Wake Up That We Realize Something Was Actually Strange.'),
 (15, 'Inception 2010', 'Downwards is the only way forwards.'),
-(16, 'Inception 2010', 'No idea is simple when you have to plant it in someone else\'s mind.');
+(16, 'Inception 2010', 'No idea is simple when you have to plant it in someone else\'s mind.'),
+(18, 'Forrest Gump 1994', 'Run, Forrest, run!'),
+(19, 'Forrest Gump 1994', 'Me and Jenny goes together like peas and carrots.'),
+(20, 'Deadpool (2016)', 'Superhero landing! She\'s going to do a superhero landing!'),
+(24, 'Guardians of the Galaxy (2014)', 'I am Groot.'),
+(25, '300 (2006)', 'This is Sparta!'),
+(26, 'Hunger Games (2012)', 'I volunteer as tribute.'),
+(27, 'Spider-Man (2002)', 'With great power comes great responsibility.'),
+(28, 'Apollo 13 (1995)', 'Houston, we have a problem.'),
+(29, 'The Lord of the Ring : the two towers (2002)', 'My precious!'),
+(30, 'The Terminator (1984)', 'I’ll be back.'),
+(31, 'Harry Potter and the Chamber of Secrets (2002)', 'It is not our abilities that show what we truly are… it is our choices.');
 
 --
 -- Indexes for dumped tables
@@ -65,4 +76,4 @@ ALTER TABLE `quotes_films`
 -- AUTO_INCREMENT for table `quotes_films`
 --
 ALTER TABLE `quotes_films`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
