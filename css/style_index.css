@@ -4,8 +4,8 @@ body{
     display: grid;
     grid-template-areas: 
     "header header header header"
-    "motivations motivations films films"
-    "series series . . "
+    ". motivations films ."
+    ". series . . "
 }
 
 .header{
@@ -19,6 +19,7 @@ body{
 
 .div_films{
     grid-area: films;
+    text-align: center;
 }
 
 .div_series{
@@ -30,12 +31,8 @@ body{
     width: 22em;
 }
 
-.left_div{
-    padding-left: 15em;
-}
-
-.right_div{
-    padding-right: 5em;
+.div_motivations, .div_films, .div_series{
+    text-align: center;
 }
 
 p{
