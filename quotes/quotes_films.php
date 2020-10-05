@@ -13,17 +13,23 @@ include('connection_database.php');
 </head>
 <body>
 
-    <?php
-        $get_quotes = $bdd->query('SELECT author,quote FROM quotes_films ORDER BY RAND() LIMIT 1');
-        $get_quotes->execute();
-        while($display_quotes = $get_quotes->fetch()){
-                echo '<div class="quote_container">' . " “ " . htmlspecialchars($display_quotes['quote']) . " ” " . '</br>';
-                echo '<p class="p_author">' . ' - ' . htmlspecialchars($display_quotes['author']) .'</p>' . '</div>';
-        }
+    <p>
+        <a href="../index.php"><button class="buttonReturn">Return</button></a>
+    </p>
 
-    ?>
+    <div class=center>
+        <?php
+            $get_quotes = $bdd->query('SELECT author,quote FROM quotes_films ORDER BY RAND() LIMIT 1');
+            $get_quotes->execute();
+            while($display_quotes = $get_quotes->fetch()){
+                    echo '<div class="quote_container">' . " “ " . htmlspecialchars($display_quotes['quote']) . " ” " . '</br>';
+                    echo '<p class="p_author">' . ' - ' . htmlspecialchars($display_quotes['author']) .'</p>' . '</div>';
+            }
 
-    <button id="refresh" onclick="document.location.reload(false)">Next </button>
-    
+        ?>
+
+        <button id="refresh" onclick="document.location.reload(false)">Next </button>
+        
+    </div>
 </body>
 </html>
