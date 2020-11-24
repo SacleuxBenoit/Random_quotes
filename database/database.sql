@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 14, 2020 at 07:34 AM
+-- Generation Time: Nov 21, 2020 at 04:05 PM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -152,7 +152,7 @@ CREATE TABLE IF NOT EXISTS `quotes_series` (
   `author` varchar(255) NOT NULL,
   `quote` text NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `quotes_series`
@@ -183,7 +183,12 @@ INSERT INTO `quotes_series` (`ID`, `author`, `quote`) VALUES
 (25, 'Alpha, The Walking Dead', 'You have to do whatever it takes to protect what you love, even from themselves.\r\n'),
 (26, 'Bane, Gotham', 'If the world is full of monsters, the only way to defeat them is to become one yourself.\r\n'),
 (27, 'Prairie Johnson, The OA', 'The best place to hide something is in plain sight. Things that are hidden out in the open are the most difficult to see.'),
-(28, 'Spock, Star Trek: Discovery', 'Now does matter. What happened before no longer exists. What will happen next has not yet been written. We have only now. That is our greatest advantage. What we do now, here, in this moment, has the power to determine the future.');
+(28, 'Spock, Star Trek: Discovery', 'Now does matter. What happened before no longer exists. What will happen next has not yet been written. We have only now. That is our greatest advantage. What we do now, here, in this moment, has the power to determine the future.'),
+(29, 'Alma Wheatley, The Queen\'s Gambit', 'Stop thinking about what might have happened in the past.'),
+(30, 'Alice Harmon, The Queen\'s Gambit', 'Men are gonna come along and wanna teach you things. You just let them blow-by, and you go on ahead and do just what the hell you feel like.'),
+(31, 'Alma Wheatley, The Queen\'s Gambit', 'Intuition can’t be found in books.'),
+(32, 'Beth Harmon, The Queen\'s Gambit', 'It’s an entire world of just 64 squares. I feel safe in it. I can control it, I can dominate it. And it’s predictable. So, if I get hurt, I only have myself to blame.'),
+(33, 'Jean Blake, The Queen\'s Gambit', 'Creativity and psychosis often go hand in hand. Or, for that matter, genius and madness.');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
