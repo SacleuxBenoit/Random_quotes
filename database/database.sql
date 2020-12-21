@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Nov 21, 2020 at 04:05 PM
--- Server version: 5.7.31
--- PHP Version: 7.3.21
+-- Hôte : 127.0.0.1:3306
+-- Généré le : lun. 21 déc. 2020 à 14:19
+-- Version du serveur :  5.7.31
+-- Version de PHP : 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `randomquotes`
+-- Base de données : `randomquotes`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `quotes_films`
+-- Structure de la table `quotes_films`
 --
 
 DROP TABLE IF EXISTS `quotes_films`;
@@ -33,10 +33,10 @@ CREATE TABLE IF NOT EXISTS `quotes_films` (
   `author` varchar(255) NOT NULL,
   `quote` text NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `quotes_films`
+-- Déchargement des données de la table `quotes_films`
 --
 
 INSERT INTO `quotes_films` (`ID`, `author`, `quote`) VALUES
@@ -65,12 +65,23 @@ INSERT INTO `quotes_films` (`ID`, `author`, `quote`) VALUES
 (28, 'Apollo 13 (1995)', 'Houston, we have a problem.'),
 (29, 'The Lord of the Ring : the two towers (2002)', 'My precious!'),
 (30, 'The Terminator (1984)', 'I’ll be back.'),
-(31, 'Harry Potter and the Chamber of Secrets (2002)', 'It is not our abilities that show what we truly are… it is our choices.');
+(31, 'Harry Potter and the Chamber of Secrets (2002)', 'It is not our abilities that show what we truly are… it is our choices.'),
+(32, 'Doc, Back To The Future', 'If my calculations are correct, when this baby hits eighty-eight miles per hour… you’re gonna see some serious shit.'),
+(33, 'George McFly, Back To The Future', 'Last night, Darth Vader came down from Planet Vulcan and told me that if I didn’t take Lorraine out, that he’d melt my brain.'),
+(34, 'Doc, Back To The Future', 'Roads? Where we\'re going we don\'t need... roads!\r\n'),
+(35, 'Doc, Back To The Future', 'If you put your mind to it you can accomplish anything.\r\n'),
+(36, 'Marty McFly, Back To The Future', 'you built a time machine..... out of a delorian ?\r\n'),
+(37, 'George McFly, Back To The Future', 'Yes. Yes. I’m George, George McFly. I’m your density. I mean… your destiny'),
+(38, 'Doc, Back To The Future', 'This is more serious than I thought. Apparently your mother is amorously infatuated with you instead of your father.'),
+(39, 'Doc, Back To The Future II', 'Time traveling is just too dangerous. Better that I devote myself to study the other great mystery of the universe: women!\r\n'),
+(40, 'Doc, Back To The Future', 'I finally invent something that works!'),
+(41, 'Doc, Back To The Future', 'THE LIBYANS!'),
+(42, 'Biff Tannen, Back To The Future', 'Hello? Hello? Anybody home?');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `quotes_motivation`
+-- Structure de la table `quotes_motivation`
 --
 
 DROP TABLE IF EXISTS `quotes_motivation`;
@@ -82,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `quotes_motivation` (
 ) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `quotes_motivation`
+-- Déchargement des données de la table `quotes_motivation`
 --
 
 INSERT INTO `quotes_motivation` (`ID`, `author`, `quote`) VALUES
@@ -143,7 +154,7 @@ INSERT INTO `quotes_motivation` (`ID`, `author`, `quote`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `quotes_series`
+-- Structure de la table `quotes_series`
 --
 
 DROP TABLE IF EXISTS `quotes_series`;
@@ -155,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `quotes_series` (
 ) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `quotes_series`
+-- Déchargement des données de la table `quotes_series`
 --
 
 INSERT INTO `quotes_series` (`ID`, `author`, `quote`) VALUES

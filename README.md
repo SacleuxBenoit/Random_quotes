@@ -1,6 +1,6 @@
 # Random Quotes
 
-quote generator with:
+quote generator for :
 
 *   films
 
