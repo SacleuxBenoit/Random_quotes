@@ -30,7 +30,7 @@ include('pass.php')
 
         try
         {
-            $bdd = new PDO('mysql:host=localhost;dbname=randomQuotes;charset=utf8', 'root', $_SESSION['pass']);
+            $bdd = new PDO('mysql:host=localhost;dbname=randomQuotes;charset=utf8', $_SESSION['user'], $_SESSION['pass']);
             $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch(Exception $e)
@@ -39,7 +39,7 @@ include('pass.php')
         }
 
             if(!empty($_POST['addAuthors']) && !empty($_POST['addQuotes'])){
-                $send_database = $bdd->prepare('INSERT INTO quotes(author,quote) VALUES(:author, :quote)');
+                $send_database = $bdd->prepare('INSERT INTO quotes_series(author,quote) VALUES(:author, :quote)');
                 $send_database->bindParam(':author', $_POST['addAuthors']);
                 $send_database->bindParam(':quote', $_POST['addQuotes']);
                 $send_database->execute();
