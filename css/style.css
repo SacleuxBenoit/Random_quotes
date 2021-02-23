@@ -1,5 +1,4 @@
 body{
-    text-align: center;
     background-color: black;
     color:white;
 }
@@ -12,4 +11,8 @@ body{
 
 .p_author{
     padding-top: 2em;
+}
+
+.center{
+    text-align: center;
 }
