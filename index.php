@@ -12,17 +12,17 @@
 
     <div class="div_motivations left_div">
         <p>quotes motivations</p>
-            <a href="./quotes/quotes_motivations.php"><img src="./images/quotes_motivations.png" class="img_motivations"></a>
+            <a href="./layouts/quotes.php?categorie=motivation"><img src="./images/quotes_motivations.png" class="img_motivations"></a>
     </div>
 
     <div class="div_films right_div">
         <p>quotes films</p>
-            <a href="./quotes/quotes_films.php"><img src="./images/quotes_films.png" class="img_films"></a>
+            <a href="./layouts/quotes.php?categorie=movie"><img src="./images/quotes_films.png" class="img_films"></a>
     </div>
 
     <div class="div_series left_div" >
         <p>quotes series</p>
-            <a href="./quotes/quotes_series.php"><img src="./images/quotes_series.png" class="img_series"></a>
+            <a href="./layouts/quotes.php?categorie=series"><img src="./images/quotes_series.png" class="img_series"></a>
     </div>
 </body>
 </html>
