@@ -1,6 +1,7 @@
 <?php
 session_start();
-include('pass.php')
+include('./database/connection_database.php');
+include('./login_database.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,25 +24,22 @@ include('pass.php')
             <textarea id="addQuotes" name="addQuotes" rows="15" cols="50"></textarea>
         </p>
 
+        <p>
+            <select name="categorie" id="categorie">
+                <option value="movie">movie</option>
+                <option value="motivation">motivation</option>
+                <option value="series">series</option>
+            </select>
+        </p>
         <input type="submit" value="Submit">
     </form>
 
     <?php
-
-        try
-        {
-            $bdd = new PDO('mysql:host=localhost;dbname=randomQuotes;charset=utf8', $_SESSION['user'], $_SESSION['pass']);
-            $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        }
-        catch(Exception $e)
-        {
-                die('Erreur : '.$e->getMessage());
-        }
-
             if(!empty($_POST['addAuthors']) && !empty($_POST['addQuotes'])){
-                $send_database = $bdd->prepare('INSERT INTO quotes_series(author,quote) VALUES(:author, :quote)');
+                $send_database = $bdd->prepare('INSERT INTO quotes(author,quote,categorie) VALUES(:author, :quote, :categorie)');
                 $send_database->bindParam(':author', $_POST['addAuthors']);
                 $send_database->bindParam(':quote', $_POST['addQuotes']);
+                $send_database->bindParam(':categorie', $_POST['categorie']);
                 $send_database->execute();
                 echo '<h1>the query have been sent</h1>';
         }
