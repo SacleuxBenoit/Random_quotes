@@ -16,7 +16,7 @@ include('../login_database.php');
 
     <h1><a href="../index.php">Create Quotes</a></h1>
 
-    <form action="addQuotes.php" method="post">
+    <form action="createQuotes.php" method="post">
 
         <p>
             <label for="addQuotes">Quote :</label>
