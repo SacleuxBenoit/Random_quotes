@@ -45,7 +45,7 @@ include('../login_database.php');
                 $send_database->bindParam(':quote', $_POST['addQuotes']);
                 $send_database->bindParam(':categorie', $_POST['categorie']);
                 $send_database->execute();
-                echo '<h1>the query have been sent</h1>';
+                echo  '<h1>' . 'the query have been sent in : ' . $_POST['categorie'] . '</h1>';
         }
     ?>
 </body>
