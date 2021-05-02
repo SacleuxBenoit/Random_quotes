@@ -13,15 +13,19 @@ include('../login_database.php');
     <title>Create quotes</title>
 </head>
 <body>
+
+    <h1><a href="../index.php">Create Quotes</a></h1>
+
     <form action="addQuotes.php" method="post">
-        <p>
-            <label for="addAuthors">Author :</label>
-            <input type="text" name="addAuthors" id="addAuthors">
-        </p>
-        
+
         <p>
             <label for="addQuotes">Quote :</label>
             <textarea id="addQuotes" name="addQuotes" rows="15" cols="50"></textarea>
+        </p>
+
+        <p>
+            <label for="addAuthors">Author :</label>
+            <input type="text" name="addAuthors" id="addAuthors">
         </p>
 
         <p>
