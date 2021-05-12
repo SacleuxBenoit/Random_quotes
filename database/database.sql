@@ -121,7 +121,7 @@ INSERT INTO `quotes` (`ID`, `categorie`, `author`, `quote`) VALUES
 (89, 'movie', 'Interstellar', 'Murphy’s Law doesn’t meant that something bad will happen. It means that whatever can happen, will happen'),
 (90, 'movie', 'Interstellar', 'Maybe we’ve spent too long trying to figure this out with theory.'),
 (91, 'movie', '300 (2006)', 'Freedom isn\'t free at all, that it comes with the highest of costs. The cost of blood'),
-(92, 'movie', '3', 'Spartans! Prepare for glory!'),
+(92, 'movie', '300 (2006)', 'Spartans! Prepare for glory!'),
 (93, 'movie', '300 (2006)', 'f they assassinate me, all of Sparta goes to war. Pray they\'re that stupid. Pray we\'re that lucky'),
 (94, 'movie', '300 (2006)', 'Hundreds leave, a handful stay. Only one looks back');
 
