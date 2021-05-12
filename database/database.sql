@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le :  Dim 02 mai 2021 à 15:59
+-- Généré le :  mer. 12 mai 2021 à 11:40
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.4.2
 
@@ -115,7 +115,15 @@ INSERT INTO `quotes` (`ID`, `categorie`, `author`, `quote`) VALUES
 (83, 'motivation', 'Bo Jackson', 'Set your goals high, and don\'t stop till you get there'),
 (84, 'motivation', 'Walt Disney', 'if you can dream it, you can do it'),
 (85, 'motivation', 'Sam Levenson', 'Don\'t watch the clock, do what it does. Keep going !'),
-(86, 'motivation', 'Tom Stoppard', 'Every exit is an entry somewhere else');
+(86, 'motivation', 'Tom Stoppard', 'Every exit is an entry somewhere else'),
+(87, 'movie', 'The Social Network, 2010', 'A million dollars isn\'t cool. You know what\'s cool? A billion dollars.'),
+(88, 'movie', 'Interstellar', 'Love is the one thing that transcends time and space.'),
+(89, 'movie', 'Interstellar', 'Murphy’s Law doesn’t meant that something bad will happen. It means that whatever can happen, will happen'),
+(90, 'movie', 'Interstellar', 'Maybe we’ve spent too long trying to figure this out with theory.'),
+(91, 'movie', '300 (2006)', 'Freedom isn\'t free at all, that it comes with the highest of costs. The cost of blood'),
+(92, 'movie', '3', 'Spartans! Prepare for glory!'),
+(93, 'movie', '300 (2006)', 'f they assassinate me, all of Sparta goes to war. Pray they\'re that stupid. Pray we\'re that lucky'),
+(94, 'movie', '300 (2006)', 'Hundreds leave, a handful stay. Only one looks back');
 
 --
 -- Index pour les tables déchargées
@@ -135,4 +143,4 @@ ALTER TABLE `quotes`
 -- AUTO_INCREMENT pour la table `quotes`
 --
 ALTER TABLE `quotes`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
