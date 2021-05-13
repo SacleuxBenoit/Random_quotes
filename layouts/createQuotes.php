@@ -14,9 +14,8 @@ include('../database/connection_database.php');
 </head>
 <body>
 
-    <h1><a href="../index.php">Create Quotes</a></h1>
-
     <div class="createQuotes">
+        <h1><a href="../index.php">Create Quotes</a></h1>
 
         <form action="createQuotes.php" method="post">
 
@@ -48,6 +47,8 @@ include('../database/connection_database.php');
     </div>
     
     <div id="createCategories">
+        <h1><a href="../index.php">Create Categories</a></h1>
+
         <form action="createQuotes.php" method="post">
                 <p>
                     <label for="createNewQuotes">Quote :</label>
