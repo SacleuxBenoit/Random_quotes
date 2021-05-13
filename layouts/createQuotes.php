@@ -16,35 +16,59 @@ include('../database/connection_database.php');
 
     <h1><a href="../index.php">Create Quotes</a></h1>
 
-    <form action="createQuotes.php" method="post">
+    <div class="createQuotes">
 
-        <p>
-            <label for="createQuotes">Quote :</label>
-            <textarea id="createQuotes" name="createQuotes" rows="15" cols="50"></textarea>
-        </p>
+        <form action="createQuotes.php" method="post">
 
-        <p>
-            <label for="addAuthors">Author :</label>
-            <input type="text" name="addAuthors" id="addAuthors">
-        </p>
+            <p>
+                <label for="createQuotes">Quote :</label>
+                <textarea id="createQuotes" name="createQuotes" rows="15" cols="50"></textarea>
+            </p>
 
-        <p>
-        <select name="categorie" id="categorie">
-            <?php
-                $select_categories = $bdd->query('SELECT DISTINCT categorie FROM quotes');
+            <p>
+                <label for="addAuthors">Author :</label>
+                <input type="text" name="addAuthors" id="addAuthors">
+            </p>
 
-                while($display_categories = $select_categories->fetch()){
-                    ?>
-                        <option><?php echo $display_categories['categorie']?></option>
+            <p>
+                <select name="categorie" id="categorie">
                     <?php
-                }
-            ?>
-        </select>
+                        $select_categories = $bdd->query('SELECT DISTINCT categorie FROM quotes');
 
-        </p>
-        <input type="submit" value="Submit">
-    </form>
+                        while($display_categories = $select_categories->fetch()){
+                            ?>
+                                <option><?php echo $display_categories['categorie']?></option>
+                            <?php
+                        }
+                    ?>
+                </select>
+                </p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <div>
+        <form action="#" method="post">
+                <p>
+                    <label for="createNewQuotes">Quote :</label>
+                    <textarea id="createNewQuotes" name="createNewQuotes" rows="15" cols="50"></textarea>
+                </p>
 
+                <p>
+                    <label for="addNewAuthors">Author :</label>
+                    <input type="text" name="addNewAuthors" id="addNewAuthors">
+                </p>
+
+                <p>
+                    <label for="createNewCategorie">new categorie :</label>
+                    <input type="text" name="createNewCategorie" id="createNewCategorie">
+                </p>
+
+                <input type="submit" value="Submit">
+
+        </form>
+    </div>
+        
     <?php
             if(!empty($_POST['addAuthors']) && !empty($_POST['createQuotes'])){
                 $send_database = $bdd->prepare('INSERT INTO quotes(author,quote,categorie) VALUES(:author, :quote, :categorie)');
