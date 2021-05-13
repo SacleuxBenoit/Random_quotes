@@ -29,11 +29,18 @@ include('../database/connection_database.php');
         </p>
 
         <p>
-            <select name="categorie" id="categorie">
-                <option value="movie">movie</option>
-                <option value="motivation">motivation</option>
-                <option value="series">series</option>
-            </select>
+        <select name="categorie" id="categorie">
+            <?php
+                $select_categories = $bdd->query('SELECT DISTINCT categorie FROM quotes');
+
+                while($display_categories = $select_categories->fetch()){
+                    ?>
+                        <option><?php echo $display_categories['categorie']?></option>
+                    <?php
+                }
+            ?>
+        </select>
+
         </p>
         <input type="submit" value="Submit">
     </form>
