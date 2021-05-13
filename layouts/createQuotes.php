@@ -47,8 +47,8 @@ include('../database/connection_database.php');
         </form>
     </div>
     
-    <div>
-        <form action="#" method="post">
+    <div id="createCategories">
+        <form action="createQuotes.php" method="post">
                 <p>
                     <label for="createNewQuotes">Quote :</label>
                     <textarea id="createNewQuotes" name="createNewQuotes" rows="15" cols="50"></textarea>

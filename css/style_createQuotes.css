@@ -1,4 +1,9 @@
 body{
+    display: grid;
+    grid-template-areas: 
+    'createQuotes createQuotes createCategories createCategories'
+    'createQuotes createQuotes createCategories createCategories'
+    'createQuotes createQuotes createCategories createCategories';
     background-color: black;
     color: white;
     text-align: center;
@@ -7,4 +12,12 @@ body{
 a{
     text-decoration: none;
     color: white;
+}
+
+.createQuotes{
+    grid-area: createQuotes;
+}
+
+.createCategories{
+    grid-area: createCategories;
 }
