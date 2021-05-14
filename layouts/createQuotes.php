@@ -79,6 +79,14 @@ include('../database/connection_database.php');
                 $send_database->execute();
                 echo  '<h1>' . 'the query have been sent in : ' . $_POST['categorie'] . '</h1>';
         }
+        else if(!empty($_POST['addNewAuthors']) && !empty($_POST['createNewQuotes'])){
+            $send_database = $bdd->prepare('INSERT INTO quotes(author,quote,categorie) VALUES(:author, :quote, :categorie)');
+            $send_database->bindParam(':author', $_POST['addNewAuthors']);
+            $send_database->bindParam(':quote', $_POST['createNewQuotes']);
+            $send_database->bindParam(':categorie', $_POST['createNewCategorie']);
+            $send_database->execute();
+            echo  '<h1>' . 'the query have been sent in : ' . $_POST['createNewCategorie'] . '</h1>';
+        }
     ?>
 </body>
 </html>
