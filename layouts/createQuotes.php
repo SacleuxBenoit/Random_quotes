@@ -77,7 +77,7 @@ include('../database/connection_database.php');
                 $send_database->bindParam(':quote', $_POST['createQuotes']);
                 $send_database->bindParam(':categorie', $_POST['categorie']);
                 $send_database->execute();
-                echo  '<h1>' . 'the query have been sent in : ' . $_POST['categorie'] . '</h1>';
+                echo '<div class="resultCategorie">' . '<h1>' . 'the query have been sent in : ' . $_POST['categorie'] . '</h1>' . '</div>';
         }
         else if(!empty($_POST['addNewAuthors']) && !empty($_POST['createNewQuotes'])){
             $send_database = $bdd->prepare('INSERT INTO quotes(author,quote,categorie) VALUES(:author, :quote, :categorie)');
@@ -85,7 +85,7 @@ include('../database/connection_database.php');
             $send_database->bindParam(':quote', $_POST['createNewQuotes']);
             $send_database->bindParam(':categorie', $_POST['createNewCategorie']);
             $send_database->execute();
-            echo  '<h1>' . 'the query have been sent in : ' . $_POST['createNewCategorie'] . '</h1>';
+            echo '<div class="resultNewCategorie">' . '<h1>' . 'the query have been sent in : ' . $_POST['createNewCategorie'] . '</h1>' . '</div>';
         }
     ?>
 </body>
