@@ -3,7 +3,7 @@ body{
     grid-template-areas: 
     'createQuotes createQuotes createCategories createCategories'
     'createQuotes createQuotes createCategories createCategories'
-    'createQuotes createQuotes createCategories createCategories';
+    'resultCategorie resultCategorie resultNewCategorie resultNewCategorie';
     background-color: black;
     color: white;
     text-align: center;
@@ -20,4 +20,12 @@ a{
 
 .createCategories{
     grid-area: createCategories;
+}
+
+.resultCategorie{
+    grid-area: resultCategorie;
+}
+
+.resultNewCategorie{
+    grid-area: resultNewCategorie;
 }
