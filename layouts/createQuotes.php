@@ -41,7 +41,8 @@ include('../database/connection_database.php');
                         }
                     ?>
                 </select>
-                </p>
+                    <button id="showCategorie">+</button>
+            </p>
             <input type="submit" value="Submit">
         </form>
     </div>
