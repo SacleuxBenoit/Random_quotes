@@ -27,9 +27,7 @@ include('../database/connection_database.php');
                 echo '<div class="quote_container">' . " “ " . htmlspecialchars($display_quotes['quote']) . " ” " . '</br>';
                 echo '<p class="p_author">' . ' - ' . htmlspecialchars($display_quotes['author']) .'</p>' . '</div>';
             }
-
         ?>
-
             <button id="refresh" onclick="document.location.reload(false)">Next </button>
             
         </div>
