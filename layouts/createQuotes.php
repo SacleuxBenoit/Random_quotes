@@ -89,5 +89,7 @@ include('../database/connection_database.php');
             echo '<div class="resultNewCategorie">' . '<h1>' . 'the query have been sent in : ' . $_POST['createNewCategorie'] . '</h1>' . '</div>';
         }
     ?>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
