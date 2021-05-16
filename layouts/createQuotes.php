@@ -44,11 +44,11 @@ include('../database/connection_database.php');
                     <button id="showCategorie">+</button>
             </p>
 
-            <p style="visibility:hidden">
+            <p style="visibility:hidden" id="pHidden">
                 <label for="newCategories">new categories :</label>
                 <input type="text" id="newCategories" name="newCategories">
             </p>
-            
+
             <input type="submit" value="Submit">
         </form>
     </div>
