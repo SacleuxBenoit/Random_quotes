@@ -52,30 +52,6 @@ include('../database/connection_database.php');
             <input type="submit" value="Submit">
         </form>
     </div>
-    
-    <div id="createCategories">
-        <h1><a href="../index.php">Create Categories</a></h1>
-
-        <form action="createQuotes.php" method="post">
-                <p>
-                    <label for="createNewQuotes">Quote :</label>
-                    <textarea id="createNewQuotes" name="createNewQuotes" rows="15" cols="50"></textarea>
-                </p>
-
-                <p>
-                    <label for="addNewAuthors">Author :</label>
-                    <input type="text" name="addNewAuthors" id="addNewAuthors">
-                </p>
-
-                <p>
-                    <label for="createNewCategorie">new categorie :</label>
-                    <input type="text" name="createNewCategorie" id="createNewCategorie">
-                </p>
-
-                <input type="submit" value="Submit">
-
-        </form>
-    </div>
         
     <?php
             if(!empty($_POST['addAuthors']) && !empty($_POST['createQuotes'])){
@@ -85,14 +61,6 @@ include('../database/connection_database.php');
                 $send_database->bindParam(':categorie', $_POST['categorie']);
                 $send_database->execute();
                 echo '<div class="resultCategorie">' . '<h1>' . 'the query have been sent in : ' . $_POST['categorie'] . '</h1>' . '</div>';
-        }
-        else if(!empty($_POST['addNewAuthors']) && !empty($_POST['createNewQuotes'])){
-            $send_database = $bdd->prepare('INSERT INTO quotes(author,quote,categorie) VALUES(:author, :quote, :categorie)');
-            $send_database->bindParam(':author', $_POST['addNewAuthors']);
-            $send_database->bindParam(':quote', $_POST['createNewQuotes']);
-            $send_database->bindParam(':categorie', $_POST['createNewCategorie']);
-            $send_database->execute();
-            echo '<div class="resultNewCategorie">' . '<h1>' . 'the query have been sent in : ' . $_POST['createNewCategorie'] . '</h1>' . '</div>';
         }
     ?>
 

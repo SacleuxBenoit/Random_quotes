@@ -1,9 +1,9 @@
 body{
     display: grid;
     grid-template-areas: 
-    'createQuotes createQuotes createCategories createCategories'
-    'createQuotes createQuotes createCategories createCategories'
-    'resultCategorie resultCategorie resultNewCategorie resultNewCategorie';
+    'createQuotes createQuotes'
+    'createQuotes createQuotes'
+    'resultCategorie resultCategorie';
     background-color: black;
     color: white;
     text-align: center;
@@ -19,14 +19,6 @@ a{
     border-right: 1px solid white;
 }
 
-.createCategories{
-    grid-area: createCategories;
-}
-
 .resultCategorie{
     grid-area: resultCategorie;
-}
-
-.resultNewCategorie{
-    grid-area: resultNewCategorie;
 }
