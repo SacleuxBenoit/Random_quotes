@@ -41,7 +41,7 @@ include('../database/connection_database.php');
                         }
                     ?>
                 </select>
-                    <button onclick="showNewCategories()" value="+" id="buttonShowCategorie">+</button>
+                    <button onclick="showNewCategories()" value="+" id="buttonShowCategorie" type="button">+</button>
             </p>
 
             <p style="visibility:hidden" id="pHidden">
