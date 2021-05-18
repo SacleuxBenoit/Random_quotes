@@ -54,13 +54,21 @@ include('../database/connection_database.php');
     </div>
         
     <?php
-            if(!empty($_POST['addAuthors']) && !empty($_POST['createQuotes'])){
+            if(!empty($_POST['addAuthors']) && !empty($_POST['createQuotes']) && !empty($_POST['newCategories'])){
                 $send_database = $bdd->prepare('INSERT INTO quotes(author,quote,categorie) VALUES(:author, :quote, :categorie)');
                 $send_database->bindParam(':author', $_POST['addAuthors']);
                 $send_database->bindParam(':quote', $_POST['createQuotes']);
-                $send_database->bindParam(':categorie', $_POST['categorie']);
+                $send_database->bindParam(':categorie', $_POST['newCategories']);
                 $send_database->execute();
                 echo '<div class="resultCategorie">' . '<h1>' . 'the query have been sent in : ' . $_POST['categorie'] . '</h1>' . '</div>';
+        }
+        else if(!empty($_POST['addAuthors']) && !empty($_POST['createQuotes']) && empty($_POST['newCategories'])){
+            $send_database = $bdd->prepare('INSERT INTO quotes(author,quote,categorie) VALUES(:author, :quote, :categorie)');
+            $send_database->bindParam(':author', $_POST['addAuthors']);
+            $send_database->bindParam(':quote', $_POST['createQuotes']);
+            $send_database->bindParam(':categorie', $_POST['categorie']);
+            $send_database->execute();
+            echo '<div class="resultCategorie">' . '<h1>' . 'the query have been sent in : ' . $_POST['categorie'] . '</h1>' . '</div>';
         }
     ?>
 
